@@ -1,5 +1,5 @@
 # lg4j
-Java library for controlling LG TVs
+Java library for controlling LG TVs based on https://github.com/ubaransel/lgcommander
 
 ```java
 Lg4j lg4j = new Lg4j();

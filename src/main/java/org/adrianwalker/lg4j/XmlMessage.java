@@ -3,7 +3,6 @@ package org.adrianwalker.lg4j;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
@@ -59,7 +58,7 @@ public abstract class XmlMessage<Q extends XmlRequest, S extends XmlResponse>
           final String protocol,
           final String host,
           final int port,
-          final String file) throws MalformedURLException, IOException {
+          final String file) throws IOException {
 
     URL url = new URL(protocol, host, port, file);
 

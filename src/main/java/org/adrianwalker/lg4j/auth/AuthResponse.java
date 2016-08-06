@@ -29,6 +29,7 @@ public final class AuthResponse extends XmlResponse<AuthResponse> {
     this.roapErrorDetail = roapErrorDetail;
   }
 
+  @XmlElement(name = "session", required = false)
   public int getSession() {
     return session;
   }
