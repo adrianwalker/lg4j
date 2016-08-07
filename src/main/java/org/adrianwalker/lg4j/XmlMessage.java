@@ -42,11 +42,7 @@ public abstract class XmlMessage<Q extends XmlRequest, S extends XmlResponse>
 
       marshalRequest(request, os);
 
-      InputStream is = connection.getInputStream();
-
-      S response = unmarshalResponse(is);
-
-      return response;
+      return unmarshalResponse(connection.getInputStream());
     }
   }
 
